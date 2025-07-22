@@ -1,0 +1,100 @@
+.calendar {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--primary-dark);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.day-header {
+    text-align: center;
+    font-weight: 600;
+    padding: 12px 0;
+    background: var(--background-color);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.day-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+.day-cell:hover {
+    background: var(--background-color);
+    transform: scale(1.05);
+}
+
+.day-cell.current-month {
+    background: white;
+    border: 1px solid var(--border-color);
+}
+
+.day-cell.other-month {
+    color: var(--text-secondary);
+    opacity: 0.4;
+}
+
+.day-cell.today {
+    background: var(--primary-color);
+    color: white;
+}
+
+.day-cell.marked {
+    background: var(--success-color);
+    color: white;
+    border: 2px solid var(--success-color);
+}
+
+.day-cell.marked::after {
+    content: '✓';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--success-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

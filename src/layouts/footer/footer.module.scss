@@ -1,0 +1,24 @@
+.footer {
+    background: var(--card-background);
+    border-top: 1px solid var(--border-color);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mess-cut-count {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.mess-cut-count .count {
+    font-size: 1.5rem;
+    color: var(--success-color);
+}
