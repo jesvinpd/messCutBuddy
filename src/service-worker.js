@@ -1,15 +1,14 @@
 const CACHE_NAME = 'messcut-cache-v1';
 const urlsToCache = [
   '/',
-  '/src/',
-  '/src/index.html',
-  '/src/styles/variables.css',
-  '/src/styles/global.css',
-  '/src/styles/components/calendar/calendar.module.css',
-  '/src/styles/components/modal/modal.module.css',
-  '/src/styles/layouts/footer/footer.module.css',
-  '/src/scripts/index.js',
-  '/src/assets/logo.png',
+  '/index.html',
+  '/styles/variables.css',
+  '/styles/global.css',
+  '/styles/components/calendar/calendar.module.css',
+  '/styles/layouts/footer/footer.module.css',
+  '/styles/components/modal/modal.module.css',
+  '/scripts/index.js',
+  '/assets/logo.png',
   // Add icons and other assets as needed
 ];
 
