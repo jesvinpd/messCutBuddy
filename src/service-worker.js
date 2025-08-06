@@ -1,4 +1,4 @@
-const CACHE_NAME = 'messcut-cache-v2'; // Changed to v2
+const CACHE_NAME = 'messcut-cache-v2.1'; // Changed to v2
 const urlsToCache = [
   '/',
   './index.html',
