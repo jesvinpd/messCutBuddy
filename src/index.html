@@ -38,6 +38,44 @@
         font-size: 14px;
       }
     }
+
+    /* Mobile fixes for calendar header - HORIZONTAL LAYOUT */
+    @media (max-width: 480px) {
+      .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      .calendar-header h2 {
+        font-size: 1.1rem;
+        margin: 0;
+        flex: 1;
+        text-align: center;
+        min-width: 0; /* Allow text to shrink */
+      }
+      
+      .nav-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        flex-shrink: 0; /* Prevent buttons from shrinking */
+        min-width: 60px;
+      }
+    }
+
+    /* For very small screens */
+    @media (max-width: 375px) {
+      .calendar-header h2 {
+        font-size: 1rem;
+      }
+      
+      .nav-btn {
+        padding: 5px 8px;
+        font-size: 10px;
+        min-width: 55px;
+      }
+    }
   </style>
 </head>
 
