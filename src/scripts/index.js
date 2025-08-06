@@ -345,11 +345,13 @@ class MessCutApp {
     document.getElementById("prevMonth").addEventListener("click", () => {
       this.calendar.previousMonth();
       this.updateUI();
+      this.updateStats();
     });
 
     document.getElementById("nextMonth").addEventListener("click", () => {
       this.calendar.nextMonth();
       this.updateUI();
+      this.updateStats();
     });
 
     // Calendar date click
