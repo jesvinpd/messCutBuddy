@@ -76,6 +76,37 @@
         min-width: 55px;
       }
     }
+
+    @media (max-width: 480px) {
+      .calendar {
+        width: 100%;
+        max-width: 420px;      /* Prevents it from being too wide on larger phones */
+        margin: 0 auto;        /* Centers the calendar */
+        padding: 18px 10px;    /* Adds space on both sides */
+        box-sizing: border-box;
+      }
+
+      .calendar-header h2 {
+        font-size: 1.4rem;
+      }
+
+      .calendar-grid {
+        gap: 10px;
+      }
+
+      .day-header {
+        font-size: 1.1rem;
+        padding: 14px 0;
+      }
+
+      .day-cell {
+        font-size: 1.2rem;
+        min-width: 36px;
+        min-height: 36px;
+        height: 36px;
+        width: 36px;
+      }
+    }
   </style>
 </head>
 
